@@ -7,14 +7,14 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.time.Duration;
 
-// Client HTTP pour interroger le conteneur Docker zxcvbn
+// Client HTTP pour l'interrogation du conteneur Docker zxcvbn
 public class PasswordValidator {
 
     private static final String URL_VALIDATEUR = "http://localhost:3000/zxcvbn";
 
     /**
      * Évalue la robustesse d'un mot de passe via le conteneur Docker.
-     * Retourne TRES_FAIBLE, FAIBLE, MOYEN, FORT, TRES_FORT ou un message d'erreur.
+     * Retourne les resultats comme TRES_FAIBLE, FAIBLE, MOYEN, FORT, TRES_FORT ou un message d'erreur.
      */
     public String evaluateStrength(String motDePasse) {
         try {
@@ -46,7 +46,7 @@ public class PasswordValidator {
         }
     }
 
-    // Extrait le score du JSON pour ca conersion. 
+    // Extractation du score  JSON pour ca conversion. 
     private String extraireScore(String json) {
         JSONObject obj = new JSONObject(json);
         int score = obj.getInt("score");

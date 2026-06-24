@@ -54,7 +54,7 @@ public class Password {
         // Fusion de tous les jeux pour le remplissage aléatoire
         String tousCaracteres = String.join("", jeuxChoisis);
         char[] motDePasse = new char[longueur];
-        
+         
         // Liste des positions, mélangée pour éviter un motif prévisible
         List<Integer> positions = new ArrayList<>();
         for (int i = 0; i < longueur; i++) {

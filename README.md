@@ -1,6 +1,5 @@
-📄 README.md complet
 
-Password Security CLI
+Projet: Password Security CLI
 
 Application en ligne de commande (Java 21) de génération de mots de passe robustes
 avec évaluation de leur solidité par un outil externe exécuté dans un conteneur Docker.
@@ -9,13 +8,11 @@ Table des matières
 
 - [Fonctionnalités]
 - [Architecture et choix techniques]
-- [Structure du projet]
 - [Analyse fonctionnelle]
 - [Analyse technique]
 - [Prérequis]
 - [Installation et exécution]
 - [Exemple de session]
-- [Auteur]
 
 1- Fonctionnalités
 
@@ -50,20 +47,6 @@ Pourquoi un serveur Node.js maison plutôt qu’une image publique ?
 
 -pour la Maîtrise totale de l’outil et conformité au principe DevOps « construire son propre conteneur ».
 - Léger, rapide, et totalement indépendant.
-
-Structure du projet
-
-├── src/main/java/com/...
-│   ├── generator/
-│   │   └── Password.java   # Générateur de mots de passe
-│   ├── validator/
-│   │   └── PasswordValidator.java     # Client HTTP vers le conteneur Docker
-│   └── Main.java   # Point d'entrée, interface CLI interactive
-├── target/
-├── Dockerfile     # Construction de l'image du validateur
-├── pom.xml        # Configuration Maven (compilation Java 21, dépendances, assembly)
-├── README.md
-└── server.js     # Code du micro-service d'évaluation (Node.js + zxcvbn)
 
 Analyse fonctionnelle
 

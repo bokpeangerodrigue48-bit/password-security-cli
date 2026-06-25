@@ -6,13 +6,13 @@ avec évaluation de leur solidité par un outil externe exécuté dans un conten
 
 Table des matières
 
-- [Fonctionnalités]
-- [Architecture et choix techniques]
-- [Analyse fonctionnelle]
-- [Analyse technique]
-- [Prérequis]
-- [Installation et exécution]
-- [Exemple de session]
+- Fonctionnalités
+- Architecture et choix techniques
+- Analyse fonctionnelle
+- Analyse technique
+- Prérequis
+- Installation et exécution
+- Exemple de session
 
 1- Fonctionnalités
 
